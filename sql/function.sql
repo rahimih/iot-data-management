@@ -16,7 +16,7 @@ BEGIN
     -- Check if partition exists
     IF NOT EXISTS (
         SELECT 1 FROM pg_tables
-        WHERE schemaname = 'public' AND tablename = partition_name
+        WHERE schemaname = 'iot_data_s' AND tablename = partition_name
     ) THEN
         EXECUTE format(
             'CREATE TABLE %I PARTITION OF sensor_readings FOR VALUES FROM (%L) TO (%L)',
