@@ -10,7 +10,7 @@ conn = psycopg2.connect(
     dbname=os.getenv("iot_data"),
     dbschema=os.getenv("iot_data_s");
     user=os.getenv("postgres"),
-    password=os.getenv("Admin980*"),
+    password=os.getenv("postgres*"),
     port=os.getenv("5432")
 )
 cur = conn.cursor()
@@ -26,4 +26,5 @@ for _ in range(1000):
     )
 conn.commit()
 cur.close()
+
 conn.close()
