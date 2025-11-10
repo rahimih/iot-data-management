@@ -16,6 +16,11 @@ This project is a scalable, real-time IoT data management system built with Post
 - **Cloud**: Azure
 - **Optional**: Microsoft Fabric (Power BI for analytics)
 
+### Database Schema
+- **devices**: Stores device metadata (ID, name, location).
+- **sensor_readings**: Time-series data with range partitioning by month.
+  ![ER Diagram](ER_diagram.png)
+
 ### Setup Instructions
 1. **Clone the Repository**:
    ```bash
