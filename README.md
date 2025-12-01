@@ -27,6 +27,9 @@ Optimized queries using indexing and partitioning. See `sql/optimization_notes.m
 ### Dashboard
 A Flask-based web dashboard displays average temperature per device. Run `python app/app.py` to start.
 
+### Testing
+Automated tests validate data ingestion. See `tests/test_ingestion.py`. CI runs via GitHub Actions.
+
 ### Setup Instructions
 1. **Clone the Repository**:
    ```bash
