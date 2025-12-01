@@ -24,6 +24,9 @@ This project is a scalable, real-time IoT data management system built with Post
 ### Query Optimization
 Optimized queries using indexing and partitioning. See `sql/optimization_notes.md` for details.
 
+### Dashboard
+A Flask-based web dashboard displays average temperature per device. Run `python app/app.py` to start.
+
 ### Setup Instructions
 1. **Clone the Repository**:
    ```bash
