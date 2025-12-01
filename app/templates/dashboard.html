@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IoT Dashboard</title>
+</head>
+<body>
+    <h1>IoT Sensor Data</h1>
+    <table>
+        <tr><th>Device</th><th>Average Temperature (°C)</th></tr>
+        {% for row in data %}
+            <tr><td>{{ row[0] }}</td><td>{{ row[1] | round(2) }}</td></tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
